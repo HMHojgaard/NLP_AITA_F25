@@ -25,47 +25,54 @@ All models and analysis are implemented and documented in a single Jupyter noteb
 
 ## Repository Structure
 
-NLP_AITA_F25/
-│
-├── AITA_NLP_nb.ipynb
-│ # Main analysis notebook (preprocessing, models, evaluation, interpretability)
-│
-├── data/
-│ └── data.zip
-│ # Compressed dataset (train/validation + external test CSVs)
-│
-├── classification_reports/
-│ ├── tfidf/
-│ │ ├── tfidf_classification_report.csv
-│ │ └── tfidf_external_test_classification_report.csv
-│ │
-│ └── bert/
-│ ├── bert_epoch1_classification_report.csv
-│ ├── bert_epoch2_classification_report.csv
-│ ├── bert_w_epoch2_classification_report.csv
-│ └── bert_external_test_classification_report.csv
-│
-├── plots_results/
-│ ├── tfidf/
-│ │ ├── TF-IDF+logisticregression_cm.png
-│ │ └── TF-IDF+logisticregression_confusionmatrix.png
-│ │
-│ └── bert/
-│ ├── bert_1epoch_cm.png
-│ └── bert_2epochs_cm.png
-│
-├── tables_results/
-│ ├── results_table_compare.csv
-│ └── results_table_ext_compare.csv
-│
-├── bert_token/
-│ ├── bert_token_importance_yta_vs_nta.csv
-│ ├── bert_token_importance_yta_vs_nta_top50.csv
-│ ├── bert_token_contrastive_aggregated.csv
-│ └── bert_token_contrastive_top_tokens.png
-│
-├── LICENSE
-└── README.md
+## Repository Structure
+
+- **AITA_NLP_nb.ipynb**  
+  Main analysis notebook containing all preprocessing, modeling, evaluation, and interpretability analyses.
+
+- **data/**  
+  Input datasets (compressed for GitHub size limits).
+  - `data.zip`  
+    Contains the training/validation dataset and the external test dataset (CSV files).
+
+- **classification_reports/**  
+  Model evaluation results saved as CSV files.
+  - **tfidf/**
+    - `tfidf_classification_report.csv`
+    - `tfidf_external_test_classification_report.csv`
+  - **bert/**
+    - `bert_epoch1_classification_report.csv`
+    - `bert_epoch2_classification_report.csv`
+    - `bert_w_epoch2_classification_report.csv`
+    - `bert_external_test_classification_report.csv`
+
+- **plots_results/**  
+  Confusion matrices and evaluation plots.
+  - **tfidf/**
+    - `TF-IDF+logisticregression_cm.png`
+    - `TF-IDF+logisticregression_confusionmatrix.png`
+  - **bert/**
+    - `bert_1epoch_cm.png`
+    - `bert_2epochs_cm.png`
+
+- **tables_results/**  
+  Aggregated result tables used in the paper.
+  - `results_table_compare.csv`
+  - `results_table_ext_compare.csv`
+
+- **bert_token/**  
+  Token-level attribution and interpretability outputs.
+  - `bert_token_importance_yta_vs_nta.csv`
+  - `bert_token_importance_yta_vs_nta_top50.csv`
+  - `bert_token_contrastive_aggregated.csv`
+  - `bert_token_contrastive_top_tokens.png`
+
+- **README.md**  
+  What you're reading right now; Project description and reproducibility instructions.
+
+- **LICENSE**  
+  Repository license.
+
 ---
 
 ## Requirements
