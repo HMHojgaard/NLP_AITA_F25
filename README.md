@@ -59,7 +59,8 @@ NLP_AITA_F25/
 │ ├── bert_token_contrastive_aggregated.csv
 │ └── bert_token_contrastive_top_tokens.png
 │
-
+├── LICENSE
+└── README.md
 
 ---
 
@@ -89,5 +90,4 @@ All required packages are installed directly in the notebook via `pip`.
 
 
 
-├── LICENSE
-└── README.md
+
