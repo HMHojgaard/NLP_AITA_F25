@@ -23,7 +23,6 @@ All models and analysis are implemented and documented in a single Jupyter noteb
 
 ---
 
-## Repository Structure
 
 ## Repository Structure
 
