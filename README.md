@@ -27,33 +27,38 @@ All models and analysis are implemented and documented in a single Jupyter noteb
 
 NLP_AITA_F25/
 │
-├── AITA_NLP_nb.ipynb # Main analysis notebook (preprocessing, models, evaluation)
+├── AITA_NLP_nb.ipynb
+│ # Main analysis notebook (preprocessing, models, evaluation, interpretability)
 │
-├── data/ # Input datasets (compressed for GitHub)
-│ └── data.zip # Contains train/validation and external test CSV files
+├── data/
+│ └── data.zip
+│ # Compressed dataset (train/validation + external test CSVs)
 │
-├── classification_reports/ # Classification reports (CSV)
+├── classification_reports/
 │ ├── tfidf/
 │ │ ├── tfidf_classification_report.csv
 │ │ └── tfidf_external_test_classification_report.csv
+│ │
 │ └── bert/
 │ ├── bert_epoch1_classification_report.csv
 │ ├── bert_epoch2_classification_report.csv
 │ ├── bert_w_epoch2_classification_report.csv
 │ └── bert_external_test_classification_report.csv
 │
-├── plots_results/ # Confusion matrices and plots
+├── plots_results/
 │ ├── tfidf/
+│ │ ├── TF-IDF+logisticregression_cm.png
 │ │ └── TF-IDF+logisticregression_confusionmatrix.png
+│ │
 │ └── bert/
 │ ├── bert_1epoch_cm.png
 │ └── bert_2epochs_cm.png
 │
-├── tables_results/ # Aggregated result tables
+├── tables_results/
 │ ├── results_table_compare.csv
 │ └── results_table_ext_compare.csv
 │
-├── bert_token/ # Token-level attribution outputs
+├── bert_token/
 │ ├── bert_token_importance_yta_vs_nta.csv
 │ ├── bert_token_importance_yta_vs_nta_top50.csv
 │ ├── bert_token_contrastive_aggregated.csv
@@ -61,7 +66,6 @@ NLP_AITA_F25/
 │
 ├── LICENSE
 └── README.md
-
 ---
 
 ## Requirements
