@@ -73,23 +73,20 @@ All models and analysis are implemented and documented in a single Jupyter noteb
   Repository license.
 
 ---
+## Installation (UCloud)
 
-## Requirements
-- **Python**: 3.10 or later  
-- **Hardware**: GPU recommended for training
+This project was developed using Python 3.10+.
 
-### Main dependencies
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- torch
-- transformers
-- datasets
-- evaluate
-- accelerate
+To install dependencies on UCloud:
 
-All required packages are installed directly in the notebook via `pip`.
+1. Open a terminal in your UCloud environment
+2. Navigate to the project root directory
+3. Install dependencies using:
+
+bash
+pip install -r requirements.txt
+
+All required packages can also be installed directly in the notebook via `pip` (See chunk 0: Setup).
 
 ---
 
